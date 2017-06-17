@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">android-lab</string>
-    <string name="dodaj">dodaj</string>
+    <string name="hint_gatunek">Gatunek</string>
+    <string name="hint_kolor">Kolor</string>
+    <string name="hint_wielkosc">Wielkosc</string>
+    <string name="dodaj">Dodaj</string>
+    <string name="hint_opis">Opis</string>
 </resources>

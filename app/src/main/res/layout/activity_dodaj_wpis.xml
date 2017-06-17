@@ -6,19 +6,45 @@
     android:layout_height="match_parent"
     android:layout_margin="@dimen/activity_margin"
     android:orientation="vertical"
-    android:gravity="center"
     tools:context="com.example.abbor.android_lab.DodajWpis">
 
-    <EditText
-        android:id="@+id/editText"
+    <Spinner
+        android:id="@+id/spinner_gatunek"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="@string/hint_gatunek" />
+
+    <EditText
+        android:id="@+id/editText_kolor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/hint_kolor" />
+
+    <EditText
+        android:id="@+id/editText_wielkosc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="@string/hint_wielkosc" />
+
+    <EditText
+        android:id="@+id/editText_opis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="3"
+        android:lines="3"
+        android:inputType="text"
+        android:hint="@string/hint_opis" />
 
     <Button
+        android:id="@+id/button"
+        android:onClick="wyslij"
+        android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/dodaj"
-        android:id="@+id/button"
-        android:onClick="wyslij"/>
+        android:text="@string/dodaj" />
 
 </LinearLayout>
